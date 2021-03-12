@@ -31,7 +31,7 @@ public class Advertisment {
     /**
      * 
      */
-    private Double price;
+    private String price;
 
     /**
      * 
@@ -42,6 +42,8 @@ public class Advertisment {
      * 
      */
     public User User;
+
+	private String name;
 
 
     /**
@@ -79,7 +81,7 @@ public class Advertisment {
     /**
      * @return
      */
-    public Double get_price() {
+    public String get_price() {
 		return price;
        
     }
@@ -88,7 +90,7 @@ public class Advertisment {
      * @param price 
      * @return
      */
-    public void set_price(Double price) {
+    public void set_price(String price) {
         this.price = price;
     }
 
@@ -131,5 +133,23 @@ public class Advertisment {
 	public void setDate(DateTime date) {
 		this.date = date;
 	}
+	
+	public String getName()
+	{
+		return name;
+	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public String getPrice()
+	{
+		return price;
+	}
+	
+	public void setPrice(String price)
+	{
+		this.price = price; 
+	}
 }
